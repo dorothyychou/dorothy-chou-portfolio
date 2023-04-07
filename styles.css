@@ -1,0 +1,280 @@
+:root {
+    --accent-text-color: #7b73a3;
+    --accent-color: #B2ABD6;
+    --title-font: 'Josefin Sans';
+    --body-font: 'Lato';
+}
+
+/* flexbox */
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    gap: 5px;
+    font-family: var(--body-font), sans-serif;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* HEADER & NAV STYLE */
+header {
+    margin-bottom: 3%;
+}
+.reg-nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu li {
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+    white-space: nowrap;
+    text-align: center;
+}
+nav li a {
+    font-family: var(--title-font), sans-serif;
+    color: var(--accent-text-color);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+}
+nav li a:hover, nav li a:active {
+    background-color: var(--accent-color);
+    color: white;
+    transition: background-color 1s;
+}
+#currpage {
+    text-decoration: underline;
+}
+
+#hamburger {
+    display: none;
+    border-style: none;
+    background-color: white;
+}
+
+#mini-nav {
+    display: none;
+}
+
+.small-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.small-menu li {
+    display: inline;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    white-space: nowrap;
+}
+
+
+#ham-menu, #close-btn {
+    display: none;
+    font-size: 25px;
+    color: var(--accent-text-color);
+    margin: 5%;
+}
+
+/* HEADING STYLE */
+h1, h2, h3 {
+    font-family: var(--title-font), sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* FOOTER STYLE */
+footer {
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+caption {
+    margin: 20px;
+    font-family: var(--title-font), sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+td {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content {
+    font-weight: 200;
+    font-size: 16px;
+    max-width: 80ch;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* HOME PAGE STYLE */
+#name {
+    font-family: var(--title-font), sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+#me-pic {
+    width: 30vw;
+    height: auto;
+}
+
+/* MEDIA STYLE */
+.amzn-van {
+    height: 50vh;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+video, #pf-screens {
+    width: 50vw;
+    height: auto;
+    padding: 2%;
+}
+
+/* ABOUTME PAGE */
+#skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+details summary {
+    font-size: 18px;
+    font-style: italic;
+    display: inline;
+    color: var(--accent-text-color);
+}
+details summary:hover {
+    text-decoration: underline;
+}
+.aboutmelist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.aboutmelist li {
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 1500px) { /* desktop size */
+    #me-pic {
+        width: 20vw;
+    }
+
+    .amzn-van {
+        height: 30vh;
+    }
+    
+    video, #pf-screens {
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 850px) { /* tablet size */
+    nav, h1 {
+        padding-top: 3%; /* to account for camera on devices */
+    }
+
+    #name {
+        margin-top: 8%;
+        font-size: 30px;
+    }
+
+    #me-pic {
+        width: 50vw;
+    }
+    
+    video, #pf-screens {
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 575px) {
+    #mini-nav, .small-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) { /* phone screen size */
+    #reg-nav {
+        display: none;
+    }
+
+    #name {
+        margin-top: 0%;
+    }
+
+    #me-pic {
+        width: 80vw;
+    }
+
+    header {
+        padding-top: 5%; /* to account for camera on devices */
+    }
+    
+    #hamburger, #ham-menu {
+        display: contents;
+    }
+
+    table {
+        white-space: nowrap;
+        transform: scale(0.8);
+    }
+}
+
+#surprise-button {
+    margin-top: 5%;
+    height: 30px;
+    width: 150px;
+    border-style: dotted;
+    border-radius: 5px;
+    color: var(--accent-text-color);
+    font-family: var(--body-font), sans-serif;
+}
+
+#surprise-section {
+    margin-top: 5%;
+}

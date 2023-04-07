@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Experience</title>
+    <meta name="description" content="experience page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/sparkle.png">
+    <script type="module" src="hammenu.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <header>
+        <nav id="reg-nav">
+            <ul class="menu">
+                <li><a class="menu-item" href="/index.html">home</a></li>
+                <li><a class="menu-item" id="currpage" href="/experience.html">experience</a></li>
+                <li><a class="menu-item" href="/projects.html">projects</a></li>
+                <li><a class="menu-item" href="/aboutme.html">about me</a></li>
+            </ul>
+        </nav>
+        <button id="hamburger">
+            <i id="ham-menu" class="fa fa-bars"></i>
+            <i id="close-btn" class="fa fa-times"></i>
+        </button>
+        <nav id="mini-nav">
+            <ul class="small-menu">
+                <li><a class="small-menu-item" href="/index.html">home</a></li>
+                <li><a class="small-menu-item"  id="currpage" href="/experience.html">experience</a></li>
+                <li><a class="small-menu-item" href="/projects.html">projects</a></li>
+                <li><a class="small-menu-item" href="/aboutme.html">about me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><strong>experience</strong></h1>
+        <div class="amazon">
+            <h2>software development engineering intern</h2>
+            <h3>Amazon</h3>
+            <img class="amzn-van" src="/media/experience/rivian.jpg" alt="Amazon Rivian Van" width="300" height="400">
+            <img class="amzn-van" src="/media/experience/me_in_rivian.jpg" alt="Me in an Amazon Rivian Van" width="300" height="400">
+            <p class="content">
+                I developed an application using Python scripts on the Fleet Edge camera system
+                installed in Amazon Delivery Vans to collect diagnostic data during the
+                installation and troubleshooting processes. I utilized Generic Attribute Profile
+                as a communication protocol to transfer data over a Bluetooth Low Energy connection
+                from the Fleet Edge device to an iOS device. Finally, I created an iOS application
+                written in Swift, using SwiftUI, and developed on Xcode that displays data
+                retrieved from the Bluetooth Low Energy connection.
+            </p>
+        </div>
+
+        <div class="code-coach">
+            <h2>code coach</h2>
+            <h3>theCoderSchool</h3>
+            <p class="content">
+                I tutored grade school students in various programming languages and guided them
+                in creating projects on different coding platforms using Scratch and Python. I
+                planned weekly curriculum specifically tailored for each student depending on
+                their proficiency to help them grasp new programming concepts.
+            </p>
+            <video width="400" height="300" controls>
+                <source src="/media/experience/scratch_ex.mov" alt="Scratch program guessing game video demo" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="consulting">
+            <h2>assistant consultant</h2>
+            <h3>iRenix Medical, Inc.</h3>
+            <p class="content">
+                I produced randomization data assigning treatments to 500+ participates of a
+                clinical trial using RStudio and stored the data in Microsoft Excel. Then, I
+                prepared and sent the randomization results to five clinics for testing.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <table>
+            <caption>Contact Information</caption>
+            <tr>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Linkedin</th>
+            </tr>
+            <tr>
+                <td>(408) 881-2654</td>
+                <td>dorothyychou@gmail.com</td>
+                <td><a href="https://www.linkedin.com/in/dorothyychou/">dorothyychou</a></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

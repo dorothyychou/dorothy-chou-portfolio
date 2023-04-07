@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Projects</title>
+    <meta name="description" content="projects page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/sparkle.png">
+    <script type="module" src="hammenu.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <header>
+        <nav id="reg-nav">
+            <ul class="menu">
+                <li><a class="menu-item" href="/index.html">home</a></li>
+                <li><a class="menu-item" href="/experience.html">experience</a></li>
+                <li><a class="menu-item" id="currpage" href="/projects.html">projects</a></li>
+                <li><a class="menu-item" href="/aboutme.html">about me</a></li>
+            </ul>
+        </nav>
+        <button id="hamburger">
+            <i id="ham-menu" class="fa fa-bars"></i>
+            <i id="close-btn" class="fa fa-times"></i>
+        </button>
+        <nav id="mini-nav">
+            <ul class="small-menu">
+                <li><a class="small-menu-item" href="/index.html">home</a></li>
+                <li><a class="small-menu-item" href="/experience.html">experience</a></li>
+                <li><a class="small-menu-item" id="currpage" href="/projects.html">projects</a></li>
+                <li><a class="small-menu-item" href="/aboutme.html">about me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><strong>projects</strong></h1>
+        
+        <div class="everglow">
+            <h2>Everglow</h2>
+            <p class="content">
+                I developed a web application written in Javascript and deployed through Firebase
+                to display the battery level and charging status of a solar-powered lamp with a
+                team of engineering students. I conducted user research before and during the
+                design process and iterated through 30+ mock-up screens on Figma with new designs
+                motivated by user feedback. Finally, I implemented the final drafts of the screens
+                using React for the user interface.
+            </p>
+            <video width="800" height="450" controls>
+                <source src="/media/projects/everglow_demo.MOV" alt="Video Demo of Everglow Application" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="sd-hacks">
+            <h2>Training Arc</h2>
+            <p class="content">
+                For SD Hacks in February 2021, my team developed a web application to assist
+                students in solving math word problems and assess their proficiency in selected
+                topics through a diagnostic exam. I created wireframes on Figma and we utilized
+                a Wolfram Alpha API to provide a step-by-step solution to problems entered by
+                the user and ReactJS, NodeJS, and Python to create the user interface based on
+                my wireframes.
+            </p>
+            <aside class="content">
+                We won the Wolfram Alpha Prize for innovative implementation of the Wolfram Alpha API.
+            </aside>
+        </div>
+
+        <div class="pocket-fridge">
+            <h2>Pocket Fridge</h2>
+            <p class="content">
+                I developed a web application that helps users track information about grocery
+                items in their refrigerator and the amount of food they wasted with a team of 
+                fellow students. I designed sample screens and prototypes on Figma, created the
+                user interface on React Native, then leveraged Expo to launch the web simulator
+                and AWS Amplify and GraphQL for the database.
+            </p>
+            <picture>
+                <img id="pf-screens" src="/media/projects/pocket_fridge_screens.png" alt="Pocket Fridge application sample screens" width="800" height="450">
+            </picture>
+            <aside class="content">
+                We won Best Overall App for the Women in Computing @ UCSD's Fall 2020 Dev Program.
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <table>
+            <caption>Contact Information</caption>
+            <tr>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Linkedin</th>
+            </tr>
+            <tr>
+                <td>(408) 881-2654</td>
+                <td>dorothyychou@gmail.com</td>
+                <td><a href="https://www.linkedin.com/in/dorothyychou/">dorothyychou</a></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
