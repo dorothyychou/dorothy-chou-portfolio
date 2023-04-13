@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" type="text/css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
-<body>
+<body class="reg-body">
     <header>
         <nav id="reg-nav">
             <ul class="menu">
@@ -35,17 +35,25 @@
         </nav>
     </header>
     <main>
-        <h1 id="name">Dorothy Chou</h1>
-        <img id="me-pic" src="/media/home/me.jpg" alt="Profile Photo">
+        <div id="home-info">
+            <img id="me-pic" src="/media/home/me.jpg" alt="Profile Photo">
+            <div id="name-content">
+                <h1 id="name">Dorothy Chou</h1>
 
-        <p class="content">
-            Hello! I'm Dorothy. I am pursuing a degree in Mathematics-Computer Science and a
-            minor in Interaction Design at the University of California, San Diego. I am looking for
-            a full time software development position after my planned graduation in June 2023.
-        </p>
+                <p class="content">
+                Hello! I'm Dorothy. I am pursuing a degree in Mathematics-Computer Science and a
+                minor in Interaction Design at the University of California, San Diego. I am looking for
+                a full time software development position after my planned graduation in June 2023.
+                </p>
+                <i><a id="resume-link" href="/media/home/resume.pdf">resume</a></i>
+            </div>
+        </div>
 
-        <h3>read more about my work</h3>
-        <span><i><a id="resume-link" href="/media/home/resume.pdf">resume</a></i></span>
+        <div id="case-studies">
+            <a class="case-study" href="./pocketfridge.html"><h3>Pocket Fridge Case Study</h3></a>
+            <a class="case-study" href="./trainingarc.html"><h3>Training Arc Case Study</h3></a>
+        </div>
+
         <br>
 
     </main>

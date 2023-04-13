@@ -1,0 +1,76 @@
+:root {
+    --accent-text-color: #7b73a3;
+    --accent-color: #B2ABD6;
+    --title-font: 'Josefin Sans';
+    --body-font: 'Lato';
+}
+
+/* HEADER & NAV STYLE */
+header {
+    margin-bottom: 5%;
+}
+
+/* HEADING STYLE */
+h1, h2, h3 {
+    font-family: var(--title-font), sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.case-study-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    gap: 5px; */
+    font-family: var(--body-font), sans-serif;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.case-study-nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    align-content: center;
+    width: 100%;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.back-btn {
+    font-size: 25px!important;
+    font-family: var(--title-font), sans-serif;
+    color: var(--accent-text-color);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.back-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transition: background-color 1s;
+}

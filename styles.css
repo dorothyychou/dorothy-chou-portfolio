@@ -1,12 +1,14 @@
 :root {
     --accent-text-color: #7b73a3;
     --accent-color: #B2ABD6;
+    --light-purple: #cecae7;
+    --accent-color-green: rgba(138, 190, 160, 0.868);
     --title-font: 'Josefin Sans';
     --body-font: 'Lato';
 }
 
 /* flexbox */
-body {
+.reg-body {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,9 +62,8 @@ nav li a {
     border-radius: 10%;
 }
 nav li a:hover, nav li a:active {
-    background-color: var(--accent-color);
-    color: white;
-    transition: background-color 1s;
+    color: var(--light-purple);
+    transition: color 0.5s;
 }
 #currpage {
     text-decoration: underline;
@@ -141,20 +142,32 @@ td {
 .content {
     font-weight: 200;
     font-size: 16px;
-    max-width: 80ch;
+    max-width: 50ch;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 /* HOME PAGE STYLE */
+#home-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#name-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
 #name {
     font-family: var(--title-font), sans-serif;
     font-weight: bolder;
     font-size: 50px;
 }
 #me-pic {
-    width: 30vw;
-    height: auto;
+    width: 24vw;
+    height: 24vw;
 }
 
 /* MEDIA STYLE */
@@ -199,10 +212,59 @@ details summary:hover {
     text-align: center;
 }
 
+#resume-link {
+    font-family: var(--title-font), sans-serif;
+    color: var(--accent-text-color);
+    font-size: 18px;
+    text-decoration: underline;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#resume-link:hover {
+    color: var(--light-purple);
+}
+
+#case-studies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2%;
+    margin-top: 5%;
+}
+
+.case-study {
+    text-decoration: none;
+    font-family: var(--title-font), sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3%;
+    border-radius: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    background-color: var(--accent-color-green);
+}
+
+.case-study:hover, .case-study:active {
+    color: var(--accent-text-color);
+    background-color: rgb(231, 241, 232);
+    transition: background-color 0.5s;
+}
+
+.case-study h3 {
+    width: fit-content!important;
+    height: auto;
+    display: inline-block;
+}
+
 /* RESPONSIVE DESIGN */
 @media only screen and (min-width: 1500px) { /* desktop size */
     #me-pic {
-        width: 20vw;
+        width: 10vw;
+        height: 10vw;
     }
 
     .amzn-van {
@@ -211,6 +273,26 @@ details summary:hover {
     
     video, #pf-screens {
         width: 30vw;
+    }
+}
+@media only screen and (max-width: 1190px) {
+    #home-info {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #name-content {
+        text-align: center;
+    }
+
+    #case-studies {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 2%;
+        margin-top: 5%;
+        align-items: center;
+        gap: 20px;
     }
 }
 @media only screen and (max-width: 850px) { /* tablet size */
@@ -224,7 +306,8 @@ details summary:hover {
     }
 
     #me-pic {
-        width: 50vw;
+        width: 30vw;
+        height: 30vw;
     }
     
     video, #pf-screens {
@@ -248,7 +331,8 @@ details summary:hover {
     }
 
     #me-pic {
-        width: 80vw;
+        width: 60vw;
+        height: 60vw;
     }
 
     header {
@@ -263,18 +347,4 @@ details summary:hover {
         white-space: nowrap;
         transform: scale(0.8);
     }
-}
-
-#surprise-button {
-    margin-top: 5%;
-    height: 30px;
-    width: 150px;
-    border-style: dotted;
-    border-radius: 5px;
-    color: var(--accent-text-color);
-    font-family: var(--body-font), sans-serif;
-}
-
-#surprise-section {
-    margin-top: 5%;
 }
