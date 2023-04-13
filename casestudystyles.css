@@ -1,6 +1,8 @@
 :root {
     --accent-text-color: #7b73a3;
     --accent-color: #B2ABD6;
+    --light-purple: #cecae7;
+    --accent-color-green: rgba(138, 190, 160, 0.868);
     --title-font: 'Josefin Sans';
     --body-font: 'Lato';
 }
@@ -70,7 +72,6 @@ h3 {
 }
 
 .back-btn:hover {
-    background-color: var(--accent-color);
-    color: white;
-    transition: background-color 1s;
+    color: var(--light-purple);
+    transition: color 0.5s;
 }
