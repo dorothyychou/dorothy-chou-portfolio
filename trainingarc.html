@@ -19,6 +19,42 @@
     </header>
     <main>
         <h1><strong>training arc case study</strong></h1>
+        <p class="study-text">
+            <b class="heading">Background</b>
+            Many students struggle to translate math word problems to their respective equations that the students are more familiar with. Especially with online learning, it is hard to give personalized feedback to the students to help familiarize them with the proper steps to take to solve word problems. We wanted to develop a web application that could assess a student's abilities to solve a variety of word problems. Our application Training Arc provides step-by-step solutions as to how to solve word problems that students may be having trouble with.
+        </p>
+
+        <p class="study-text">
+            <b class="heading">Problem Statement</b>
+            Students sometimes have trouble understanding the correlation between mathematical equations required to solve word problems and the word problems themselves. Additionally, without a proper assessment of their skills, students will not know which areas they need to improve on when it comes to solving word problems.
+        </p>
+        <p class="study-text">
+            <b class="heading">Project Brainstorming</b>
+            We wanted to create a project that could help not only students better understand the step-by-step process of solving word problems but also be able assess their abilities in solving word problems to provide catered feedback. Training Arc takes a word problem submitted by the user as input and runs it through the Wolfram Alpha Full Result API to generate a JSON with the solution and step-by-step process, if available. Our website then takes the JSON and parses it, printing the results and the step-by-step solution to the page. We also have a separate page with a diagnostic quiz so that the user can assess themselves by solving tagged word problems and seeing what their score is, as well as what percentage of each type of problem they got correct.
+        </p>
+        <p class="study-text">
+            <b class="heading">Project Timeline</b>
+            Our team had two and a half days total to complete this project and a presentation to showcase our work at the SD Hacks 2021 hackathon. First, we created mockup web application screens on Figma to give us a better idea of how we wanted to create the UI for our project. We used a combination of ReactJS, NodeJS, and Python to create a React App. We ran API calls to the Wolfram Alpha API that was provided for us to use, through Python and had NodeJS interact with the Python script to send the information to the React component. We spent the last few hours testing our application with various word problems, including poorly worded ones, to see if it would be able to provide a step-by-step solution.
+        </p>
+        <p class="study-text">
+            <b class="heading">Challenges</b>
+            One major challenge that we ran into was connecting the Python script to the backend and connecting the backend to the front end. This was the first time all four of us have done web development, so a lot of our time was spent looking up proper documentation and code that would work for our purposes. 
+            Another challenge we had was deploying the website on heroku. It was the first time any of us had used heroku, so debugging our code to work with it took extra time.
+        </p>
+        <p class="study-text">
+            <b class="heading">Afterwords</b>
+            We were that we were able to make a full-stack website. Though we all had some experience in web development, it was all of our first times developing an entire web application from scratch. 
+            We learned how to use the Wolfram Alpha API, as well as other technologies such as Flask and heroku. We also learned how to connect the backend server with the frontend client, making our website more dynamic. It was my first time working under such time pressure and I gained a lot of time management and project planning skills.
+        </p>
+
+        <p class="study-text">
+            <b class="heading">What's Next for Training Arc?</b>
+            We hope to expand the functionality of our word problem solver to be able to accept a larger variety of questions since we were limited to problems the Wolfram Alpha API could solve, though it was very useful in parsing even poorly worded problems we tested the application with. Furthermore, we would like to generate word problem questions and tag them using an online word problem API to use for the quiz questions. We would like to make an automatic topic detection for all kinds of word problems to tag each of the randomly generated word problems.
+        </p>
+
     </main>
+    <footer>
+        <i style="color:gray;">This project was submitted to SD Hacks 2021. Check out our <a href="https://devpost.com/software/word-problem-solver">DevPost</a>!</i>
+    </footer>
 </body>
 </html>
