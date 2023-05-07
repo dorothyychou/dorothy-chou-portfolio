@@ -139,12 +139,21 @@ td {
     padding-right: 15px;
 }
 
-.content {
+#me-content {
     font-weight: 200;
     font-size: 16px;
     max-width: 50ch;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.content {
+    font-weight: 200;
+    font-size: 16px;
+    /* max-width: 50ch; */
+    padding-left: 30vw;
+    padding-right: 30vw;
+    text-align: center;
 }
 
 /* HOME PAGE STYLE */
@@ -245,12 +254,12 @@ details summary:hover {
     text-align: center;
     align-items: center;
     width: 300px;
-    background-color: var(--accent-color-green);
+    background-color: var(--accent-color);
 }
 
 .case-study:hover, .case-study:active {
     color: var(--accent-text-color);
-    background-color: rgb(231, 241, 232);
+    background-color: #eae7f2;
     transition: background-color 0.5s;
 }
 
@@ -285,6 +294,10 @@ details summary:hover {
     #name-content {
         text-align: center;
     }
+    .content {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
 
     #case-studies {
         flex-direction: column;
@@ -294,6 +307,7 @@ details summary:hover {
         align-items: center;
         gap: 20px;
     }
+    
 }
 @media only screen and (max-width: 850px) { /* tablet size */
     nav, h1 {
@@ -308,6 +322,10 @@ details summary:hover {
     #me-pic {
         width: 30vw;
         height: 30vw;
+    }
+    .content {
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     
     video, #pf-screens {
