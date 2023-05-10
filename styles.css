@@ -10,9 +10,9 @@
 /* flexbox */
 .reg-body {
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 
     display: flex;
     flex-direction: column;
@@ -28,9 +28,9 @@
 
 /* HEADER & NAV STYLE */
 header {
-    margin-bottom: 3%;
+    margin-bottom: 6%;
 }
-.reg-nav {
+#reg-nav {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -39,7 +39,7 @@ header {
     align-content: center;
     width: 100%;
     padding: 1%;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 .menu {
     display: flex;
