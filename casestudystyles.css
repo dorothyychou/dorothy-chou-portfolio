@@ -10,15 +10,6 @@
 header {
     margin-bottom: 5%;
 }
-.case-study-nav {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1%;
-  background-color: rgba(255, 255, 255, 0.95);
-}
 /* HEADING STYLE */
 h1, h2, h3 {
     font-family: var(--title-font), sans-serif;
@@ -45,9 +36,6 @@ footer {
 
 .case-study-body {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     font-family: var(--body-font), sans-serif;
     text-align: center;
@@ -60,8 +48,6 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    text-align: left;
-    align-content: center;
     width: 100%;
     padding: 1%;
     background-color: rgba(255, 255, 255, 0.75);
