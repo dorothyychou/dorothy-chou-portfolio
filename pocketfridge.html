@@ -5,7 +5,6 @@
     <meta name="description" content="pocket fridge case study">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/media/sparkle.png">
-    <script type="module" src="hammenu.js"></script>
     <link rel="stylesheet" href="/casestudystyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" type="text/css">
@@ -20,18 +19,14 @@
     <main>
         <h1><strong>pocket fridge case study</strong></h1>
         <p class="study-text">
-            <b class="heading">Background</b>
-            I find myself having to throw forgotten and unfinished food items out from my fridge when
-            the expiration date has passed. I'm sure others have felt the same way, which is why food
-            waste in the USA per year is up to 40% of the food supply. My team and I decided to create
-            an application called Pocket Fridge that could help solve this problem by providing a
-            convenient way to track grocery items and their expiration dates. Pocket Fridge also allows
-            users to create accounts and add housemates with a shared fridge and shared grocery shopping
-            lists. To further reduce possible food waste, the application also provides a variety of
-            recipes from an API that users can search through to use up items in their fridge before they
-            expire, as well as view food waste data for the entire household for users to hold each other
-            accountable.
+          <b class="heading">Background</b>
+          I find myself having to throw forgotten and unfinished food items out from my fridge when the expiration date has passed. I'm sure others have felt the same way, which is why food waste in the USA per year is up to 40% of the food supply.
+          <strong class="emph">
+            My team and I decided to create an application called Pocket Fridge that could help solve this problem by providing a convenient way to track grocery items and their expiration dates.
+          </strong>
+          Pocket Fridge also allows users to create accounts and add housemates with a shared fridge and shared grocery shopping lists. To further reduce possible food waste, the application also provides a variety of recipes from an API that users can search through to use up items in their fridge before they expire, as well as view food waste data for the entire household.
         </p>
+          
 
         <p class="study-text">
             <b class="heading">Problem Statement</b>
@@ -42,9 +37,9 @@
 
         <p class="study-text">
           <b class="heading">Feature List</b>
-          We compiled a feature list that we wished to implement in our project and referenced it as we developed.<br>
-          <a href="https://docs.google.com/document/d/1e88M3P1DtEwXM1mCExTtPBOXmbBECFcChgBfIj1IXI8/edit?usp=sharing">Feature List</a>
-      </p>
+          We compiled a feature list that we wished to implement in our project and used it as reference.
+        </p>
+        <a id="featurelist-button" href="https://docs.google.com/document/d/1e88M3P1DtEwXM1mCExTtPBOXmbBECFcChgBfIj1IXI8/edit?usp=sharing">feature list</a>
 
         <p class="study-text">
             <b class="heading">Project Timeline</b>
@@ -57,8 +52,7 @@
                   <details>
                     <summary class="timeline-heading">Week 1 - Brainstorming and Needfinding</summary>
                     <p>
-                      We spent one week brainstorming for a project idea and found through research that food
-                      waste has become a large environmental concern and many people need help in reducing their food waste. More specifically, they need help with keeping track of things in their fridge before they expire so they aren't forced to throw bad food away. Also, humans are naturally forgetful, so they could use reminders that let them know what food they already own or what food is about to expire. People may not actually be aware of how much waste they produce or how large of an impact their waste may have. In addition, they may lack the creativity for them to come up with ways to use the ingredients they have. Thus, we found that there are many areas people could use some help with in terms of reducing their food waste.
+                      We found through individual research that food waste has become a large environmental concern and many people need a way to reduce their food waste. More specifically, they need help with keeping track of things in their fridge before they expire so they aren't forced to throw it away. People also may not actually be aware of how much waste they produce or how large of an impact their waste may have. In addition, they may lack the creativity for them to come up with ways to use the ingredients they have. Thus, we found that there are many areas people could use some help with in terms of reducing their food waste.
                     </p>
                   </details>
                 </div>
@@ -68,10 +62,7 @@
                   <details>
                     <summary class="timeline-heading">Week 2 - User Research</summary>
                     <p>
-                      Our original idea for the app was an iOS application that allowed users to keep track
-                      of food items they buy so they would know exactly what they had in their “inventory,” 
-                      preventing them from buying duplicate items. We planned for the app to have a barcode 
-                      scanner, and the user would be able to scan items' barcodes to add them to their inventory. Upon scanning, the item's expiration date would be attached to the item in the user's virtual inventory. To prevent the user from throwing away expired food, the app would notify the user when an item is about to expire. Additionally, the app would recommend recipes using the items in the user's inventory and remind users when their stock is running low. They could create custom grocery lists and also be told where the nearest place to find an item is. The app could also help people track their spending and grow good spending habits, since it would let people know how much food they should buy for their household. Finally, the app would allow users to keep track of their food waste. When items expire, their weight and cost would be added to an annual total. Ideally, being reminded of the amount of food they were actually wasting would be motivating for users to keep their numbers low. Our target users were people who live in a shared household, such as families or college housemates, but the app could be useful to anyone.
+                      Our idea for the app was an iOS application that allowed users to keep track of food items they buy so they would know exactly what they had in their inventory and when the expiration dates were. Users could also create custom shared grocery lists with their households. Additionally, the app would recommend recipes using the items in the user's inventory. Finally, the app would allow users to keep track of their food waste. When items expire, their weight and cost would be added to an annual total, hopefully motivating for users to keep their numbers low. Our target users were people who live in a shared household, such as families or college housemates, but the app could be useful to anyone.
                     </p>
                   </details>
                 </div>
@@ -83,6 +74,7 @@
                     <p>
                       We designed iOS sample screens using Figma. Our sample screens included a sign up and log in page, a fridge page to display the inventory, a shopping list page, a recipe page, a food waste stats page, and a profile page. We also had key features such as adding and removing items and recipes, but we did not include more ambitious features such as barcode scanning and notifications since we were unsure whether we would be able to implement them all within our 8 week time limit.
                     </p>
+                    <a class="href-button" href="#app-screens">screens</a>
                   </details>
                 </div>
               </div>
@@ -91,7 +83,7 @@
                   <details>
                     <summary class="timeline-heading">Week 4 - Assign Roles</summary>
                     <p>
-                      We spent a period of time learning the tech stack for our project, then we divided up tasks between a backend team and a frontend team.
+                      We spent a period of time learning the tech stack for our project which included React-Native, Xcode, and GitHub, then we divided up tasks between a backend team and a frontend team.
                     </p>
                   </details>
                 </div>
@@ -122,8 +114,9 @@
                   <details>
                     <summary class="timeline-heading">Week 7 - Finishing App</summary>
                     <p>
-                      We put the finishing touches on our application and checked off the features we implemented from our <a href="https://docs.google.com/document/d/1e88M3P1DtEwXM1mCExTtPBOXmbBECFcChgBfIj1IXI8/edit?usp=sharing"><i>feature list</i></a>.
+                      We put the finishing touches on our application and checked off the features we implemented from our feature list.
                     </p>
+                    <a class="href-button" href="https://docs.google.com/document/d/1e88M3P1DtEwXM1mCExTtPBOXmbBECFcChgBfIj1IXI8/edit?usp=sharing">feature list</a>
                   </details>
                 </div>
               </div>
@@ -133,17 +126,58 @@
                     <summary class="timeline-heading">Week 8 - Prepare Presentation</summary>
                     <p>
                       Finally, we finished our application and prepared a presentation for our showcase.
-                      <br>
-                      <a href="https://docs.google.com/presentation/d/1wYnc5XeCEaEnNHcHgdwHKOhn_HzyuIXW7rPlKXwNyU0/edit?usp=sharing"><i>presentation</i></a>
                     </p>
+                    <a class="href-button" href="https://docs.google.com/presentation/d/1wYnc5XeCEaEnNHcHgdwHKOhn_HzyuIXW7rPlKXwNyU0/edit?usp=sharing">presentation</a>
                   </details>
                 </div>
               </div>
             </div>
         </p>
+
+        <p class="study-text" id="app-screens">
+          <b class="heading">Application Screens</b>
+          <div id="pfscreens">
+            <div class="pfscreens-div">
+              <div class="pfscreens-div2">
+                <p>Log In and Sign Up Screens</p>
+                <img src="./media/pocketfridge/screens_1.png" alt="screens 1" class="pfscreen2">
+                <p class="screen-description">The log in and sign up pages are displayed when users open the application so they can log in to or sign up with an account.</p>
+              </div>
+              <div class="pfscreens-div2">
+                <p>Fridge Home Page</p>
+                <img src="./media/pocketfridge/screens_2.png" alt="screens 2" class="pfscreen3">
+                <p class="screen-description">The fridge home page allows users to view, add, edit, and remove items in their fridge. Users can scan the item's barcode or manually enter the item's name, expiration date, price, and any other notes to their fridge that is shared with their household of users.</p>
+              </div>
+            </div>
+            <div class="pfscreens-div">
+              <div class="pfscreens-div2">
+                <p>Shopping List Screens</p>
+                <img src="./media/pocketfridge/screens_3.png" alt="screens 3" class="pfscreen3">
+                <p class="screen-description">Users can add and check off or remove items from their shopping list that is shared by their entire household of users to help avoid over-buying products if other housemates have already bought it.</p>
+              </div>
+              <div class="pfscreens-div2">
+                <p>Recipes Screens</p>
+                <img src="./media/pocketfridge/screens_4.png" alt="screens 4" class="pfscreen3">
+                <p class="screen-description">The recipe page allows users to search for recipes to use up items in their fridge. They can also add custom recipes of their own.</p>
+              </div>
+            </div>
+            <div class="pfscreens-div">
+              <div class="pfscreens-div2">
+                <p>Food Waste Statistics Screen</p>
+                <img src="./media/pocketfridge/screens_5.png" alt="screens 5" class="pfscreen1">
+                <p class="screen-description">On the food waste statistics page, users can see the wasted food data for their entire household.</p>
+              </div>
+              <div class="pfscreens-div2">
+                <p>Household Users Screen</p>
+                <img src="./media/pocketfridge/screens_6.png" alt="screens 6" class="pfscreen1">
+                <p class="screen-description">Users can add other users who share a fridge to their household so they can view the shared fridge, shopping list, and food waste.</p>
+              </div>
+            </div>
+          </div>
+        </p>
     </main>
     <footer>
-        <a href="https://www.w3schools.com/howto/howto_css_timeline.asp">Timeline Resource</a>
+        <a href="https://www.w3schools.com/howto/howto_css_timeline.asp">timeline resource</a>
     </footer>
 </body>
 </html>

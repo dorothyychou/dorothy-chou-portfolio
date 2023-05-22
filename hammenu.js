@@ -1,8 +1,8 @@
 const smallnav = document.getElementById("mini-nav");
 const smallmenu = document.querySelector(".small-menu");
 const menuitems = document.querySelectorAll(".small-menu-item");
-const hamburger= document.getElementById("hamburger");
-const closebtn= document.getElementById("close-btn");
+const hamburger = document.getElementById("hamburger");
+const closebtn = document.getElementById("close-btn");
 const menubtn = document.getElementById("ham-menu");
 
 function toggleMenu() {
