@@ -80,12 +80,23 @@ footer {
     text-align: center;
     align-items: center;
 }
-.emph {
+
+ul li {
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 200;
+  max-width: 60ch;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.emph {
+  font-size: 18px;
+  font-weight: 900;
   font-style: italic;
-  max-width: 75ch;
-  margin: 10px auto;
+  max-width: 50ch;
+  margin: 20px auto;
+  color: var(--accent-text-color);
 }
 .heading {
   margin-top: 20px;
@@ -306,4 +317,8 @@ footer {
   .pfscreens-div {
     flex-direction: column;
   }
+}
+
+video {
+  margin: 20px auto;
 }
